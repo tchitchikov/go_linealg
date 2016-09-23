@@ -1,6 +1,7 @@
 /*
    build a matrix and perform an operation on it.
-   give a row size, a column size, and an initialization
+   give a row size, a column size, and an (optional) initialization
+   you don't have to initialize the matrix, it will default to 0's.
 */
 
 package main
