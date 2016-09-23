@@ -30,6 +30,7 @@ func TestMatrixCreationInitialized(t *testing.T) {
 
 // TestMatrixCreationLarge makes a 1 million row by 1000 column matrix ~2.1 seconds on a desktop
 // Larger ones (1 billion took 71 seconds) overran the stack
+//runtime: VirtualAlloc of 1048576 bytes failed with errno=1455 fatal error: runtime: cannot map pages in arena address space
 func TestMatrixCreationLarge(t *testing.T) {
 	t.Log("Testing matrix_creation...")
 	matrix := BuildMatrix(Matrix{
